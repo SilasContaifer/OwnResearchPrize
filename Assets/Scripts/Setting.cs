@@ -15,6 +15,7 @@ public class Setting : MonoBehaviour
         //Create the User variables
         PlayerPrefs.SetInt("LeftValue", 0);//It will storage the number*value of questions answered from the Left political side
         PlayerPrefs.SetInt("RightValue", 0);//It will storage the number*value of questions answered from the Right political side
+        PlayerPrefs.SetInt("LiteracyValue", 0);//It will storage the number*value of questions answered from the Literacy questions
 
     }
 
