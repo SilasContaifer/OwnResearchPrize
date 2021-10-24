@@ -7,7 +7,7 @@ public class PoliticalButton : MonoBehaviour
 {
 
     /// <summary>
-    /// Add this script to the each botton that are an Answer to the Political Questions
+    /// Add this script to the each button that are an Answer to the Political Questions
     /// </summary>
 
     [Header("Select one of the following")]//Classify the button for this answer as it political focus

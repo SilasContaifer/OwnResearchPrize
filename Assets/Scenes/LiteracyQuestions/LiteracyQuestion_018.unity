@@ -2386,7 +2386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneRight01: sceneRight01
-  sceneRight02: sceneRight01
+  sceneRight02: 'sceneRight02 '
   sceneRight03: sceneRight03
   sceneLeft01: sceneLeft01
   sceneLeft02: sceneLeft02

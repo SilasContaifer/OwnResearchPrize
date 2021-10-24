@@ -693,8 +693,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In the last 6 months, how often did a healthcare provider practice use
-    medical words that you did not understand to you?
+  m_Text: In the last 6 months, how often did a healthcare provider practice used
+    medical words that you did not understand?
 --- !u!222 &1179414421
 CanvasRenderer:
   m_ObjectHideFlags: 0

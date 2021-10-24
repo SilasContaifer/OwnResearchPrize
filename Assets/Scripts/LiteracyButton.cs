@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LiteracyButton : MonoBehaviour
 {
     /// <summary>
-    /// Add this script to the each botton that are an Answer to the Literacy Questions
+    /// Add this script to the each Button that are an Answer to the Literacy Questions
     /// </summary>
 
     [Header("Question Value")]

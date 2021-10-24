@@ -9,4 +9,10 @@ public class Prize : MonoBehaviour
     {
         SceneManager.LoadScene("Prize", LoadSceneMode.Single);//We will load the scene named in the inspector it will be .Single because it will close the previous scene
     }
+
+    
+    public void ExitSoftware()
+    {
+        Application.Quit();
+    }
 }
