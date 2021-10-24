@@ -71,15 +71,15 @@ public class Scoring : MonoBehaviour
         //Load the results
         literacyValue = PlayerPrefs.GetInt("LiteracyValue");//Receive the value saved up to now from the Literacy questions
         //Define the Literacy position
-        if (literacyValue <= 10)
+        if (literacyValue <= 25)//the lowest possible score is 13
         {
             literacyLevel = 1;
         }
-        else if (literacyValue > 10 & literacyValue <= 20)
+        else if (literacyValue >= 26 & literacyValue <= 38)
         {
             literacyLevel = 2;
         }
-        else
+        else//the highest  score for this questions is 52
         {
             literacyLevel = 3;
         }

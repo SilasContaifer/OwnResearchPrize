@@ -206,7 +206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &170515687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -221,10 +221,10 @@ RectTransform:
   m_Father: {fileID: 2090238958}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -150}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170515688
 MonoBehaviour:
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Never
 --- !u!222 &591057146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 762219308}
   - component: {fileID: 762219307}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Button (Usually)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +464,7 @@ RectTransform:
   m_Children:
   - {fileID: 1031080590}
   m_Father: {fileID: 1979857372}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -516,7 +516,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 762219307}
-        m_TargetAssemblyTypeName: PoliticalButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: LiteracyButton, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
         m_Arguments:
@@ -574,13 +574,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 762219302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c983e5f302fd10b41b8bd288aad1fd3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab8312a936111d4eb6c7461d6180f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftButton: 0
-  rightButton: 1
-  thisQuestionValue: 1
-  sceneName: SampleScene
+  thisQuestionValue: 3
+  sceneName: LiteracyQuestion_008
 --- !u!114 &762219308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  m_EffectDistance: {x: 15, y: -15}
+  m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
 --- !u!1 &886532382
 GameObject:
@@ -767,7 +765,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Usually
 --- !u!222 &1031080592
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -866,7 +864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  m_EffectDistance: {x: 15, y: -15}
+  m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
 --- !u!1 &1179414418
 GameObject:
@@ -903,7 +901,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179414420
 MonoBehaviour:
@@ -938,7 +936,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Question
+  m_Text: In the last 6 months, how often were these verbal instructions easy to
+    understand?
 --- !u!222 &1179414421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1017,7 +1016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Sometimes
 --- !u!222 &1467799491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1041,7 +1040,7 @@ GameObject:
   - component: {fileID: 1612323505}
   - component: {fileID: 1612323504}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button (Always)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1059,7 @@ RectTransform:
   m_Children:
   - {fileID: 1863533694}
   m_Father: {fileID: 1979857372}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1112,7 +1111,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1612323504}
-        m_TargetAssemblyTypeName: PoliticalButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: LiteracyButton, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
         m_Arguments:
@@ -1170,13 +1169,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1612323499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c983e5f302fd10b41b8bd288aad1fd3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab8312a936111d4eb6c7461d6180f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftButton: 0
-  rightButton: 1
-  thisQuestionValue: 1
-  sceneName: SampleScene
+  thisQuestionValue: 4
+  sceneName: LiteracyQuestion_008
 --- !u!114 &1612323505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1190,8 +1187,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  m_EffectDistance: {x: 15, y: -15}
+  m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
+--- !u!1 &1842429673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842429674}
+  - component: {fileID: 1842429676}
+  - component: {fileID: 1842429675}
+  m_Layer: 5
+  m_Name: Political (Text)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1842429674
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842429673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2090238958}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1842429675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842429673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1842429676
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842429673}
+  m_CullTransparentMesh: 1
 --- !u!1 &1863533693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1338,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Always
 --- !u!222 &1863533696
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1286,7 +1362,7 @@ GameObject:
   - component: {fileID: 1873562164}
   - component: {fileID: 1873562163}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button (Never)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1433,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1873562163}
-        m_TargetAssemblyTypeName: PoliticalButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: LiteracyButton, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
         m_Arguments:
@@ -1415,13 +1491,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1873562158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c983e5f302fd10b41b8bd288aad1fd3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab8312a936111d4eb6c7461d6180f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftButton: 1
-  rightButton: 0
   thisQuestionValue: 1
-  sceneName: SampleScene
+  sceneName: LiteracyQuestion_008
 --- !u!114 &1873562164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,7 +1509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  m_EffectDistance: {x: 15, y: -15}
+  m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
 --- !u!1 &1979857371
 GameObject:
@@ -1469,8 +1543,8 @@ RectTransform:
   - {fileID: 1172719554}
   - {fileID: 1873562159}
   - {fileID: 2061657309}
-  - {fileID: 1612323500}
   - {fileID: 762219303}
+  - {fileID: 1612323500}
   m_Father: {fileID: 886532386}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1534,7 +1608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1992453891
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1549,10 +1623,10 @@ RectTransform:
   m_Father: {fileID: 2090238958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992453892
 MonoBehaviour:
@@ -1611,7 +1685,7 @@ GameObject:
   - component: {fileID: 2061657314}
   - component: {fileID: 2061657313}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button (Sometimes)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1682,7 +1756,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2061657313}
-        m_TargetAssemblyTypeName: PoliticalButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: LiteracyButton, Assembly-CSharp
         m_MethodName: Answer
         m_Mode: 1
         m_Arguments:
@@ -1740,13 +1814,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2061657308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c983e5f302fd10b41b8bd288aad1fd3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab8312a936111d4eb6c7461d6180f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftButton: 1
-  rightButton: 0
-  thisQuestionValue: 1
-  sceneName: SampleScene
+  thisQuestionValue: 2
+  sceneName: LiteracyQuestion_008
 --- !u!114 &2061657314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,7 +1832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  m_EffectDistance: {x: 15, y: -15}
+  m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
 --- !u!1 &2090238957
 GameObject:
@@ -1775,13 +1847,14 @@ GameObject:
   - component: {fileID: 2090238961}
   - component: {fileID: 2090238960}
   - component: {fileID: 2090238959}
+  - component: {fileID: 2090238964}
   m_Layer: 5
   m_Name: TestingTool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2090238958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1795,6 +1868,7 @@ RectTransform:
   m_Children:
   - {fileID: 1992453891}
   - {fileID: 170515687}
+  - {fileID: 1842429674}
   m_Father: {fileID: 886532386}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1815,9 +1889,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803667e6582621240a59287585c7bd64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  politicalValue: 1
+  showPoliticalValue: 0
+  showLiteracyValue: 1
   politicalRightUI: {fileID: 170515688}
   politicalLeftUI: {fileID: 1992453892}
+  literacyUI: {fileID: 1842429675}
 --- !u!114 &2090238960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,3 +1956,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090238957}
   m_CullTransparentMesh: 1
+--- !u!156049354 &2090238964
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090238957}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 1, z: 1}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 0

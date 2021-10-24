@@ -11,27 +11,23 @@ public class TestingTools : MonoBehaviour
     /// </summary>
 
     [Header("Value to Show on the Screen")]
-    public bool politicalValue;
+    public bool showPoliticalValue;
+    public bool showLiteracyValue;
     [Header("UI text")]
     public Text politicalRightUI;
     public Text politicalLeftUI;
+    public Text literacyUI;
 
-    //
+    //Values of the quizzes
     private int leftValue;//total value of answers from the Left Political spectrum
     private int rightValue;//total value of answers from the Right Political spectrum
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    private int literacyValue;//total value of answers from the Literacy Health questions
 
     // Update is called once per frame
     void Update()
     {
-        //Show the Value of Political Value
-        if (politicalValue)
+        //Show the score of the Political Value
+        if (showPoliticalValue)
         {
             //Load each value
             rightValue = PlayerPrefs.GetInt("RightValue");
@@ -39,6 +35,15 @@ public class TestingTools : MonoBehaviour
             //Change the text number informed in the screen
             politicalLeftUI.text = "L: " + leftValue.ToString();
             politicalRightUI.text = "R: " + rightValue.ToString();
+        }
+
+        //Show the score of the Literacy Value
+        if (showLiteracyValue)
+        {
+            //Load the value
+            literacyValue = PlayerPrefs.GetInt("LiteracyValue");//Receive the value saved up to now from the Literacy questions
+            //Change the text number informed in the screen
+            literacyUI.text = literacyValue.ToString();
         }
     }
 }
